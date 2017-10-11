@@ -1,0 +1,39 @@
+{
+    "name": "jeffreyhyer/bamboohr-laravel",
+    "type": "library",
+    "description": "Laravel 5.x Service Provider and Facade for the jeffreyhyer/bamboohr package",
+    "keywords": ["laravel", "bamboohr", "api"],
+    "version": "0.1.0",
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/support": "5.0.* || 5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.*",
+        "jeffreyhyer/bamboohr": "^0.1.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeffrey Hyer",
+            "email": "jmhyer135@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/jeffreyhyer/bamboohr-laravel",
+    "support": {
+        "issues": "https://github.com/jeffreyhyer/bamboohr-laravel/issues",
+        "source": "https://github.com/jeffreyhyer/bamboohr-laravel"
+    },
+    "autoload": {
+        "psr-4": {
+            "JeffreyHyer\\BambooHR\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JeffreyHyer\\BambooHR\\ServiceProvider"
+            ],
+            "aliases": {
+                "BambooHR": "JeffreyHyer\\BambooHR\\Facade"
+            }
+        }
+    }
+}
