@@ -63,7 +63,7 @@ Once installed you should be able to access the BambooHR API through the facade:
 <?php
 
 // Get employee directory
-BambooHR::employees->directory();
+BambooHR::employees()->directory();
 ```
 
 For full API documentation and additional usage options see
