@@ -2,8 +2,6 @@
 
 namespace JeffreyHyer\BambooHR;
 
-use BambooHR\BambooHR;
-
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
 
@@ -21,11 +19,11 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(BambooHR::class, function ($app) {
+        $this->app->singleton('bamboohr', function ($app) {
             $domain = $app['config']->get('services.bamboohr.domain', "");
             $api_key = $app['config']->get('services.bamboohr.key', "");
 
-            return new BambooHR($domain, $api_key);
+            return new \BambooHR\BambooHR($domain, $api_key);
         });
     }
 
@@ -36,6 +34,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function provides()
     {
-        return [BambooHR::class];
+        return ['bamboohr'];
     }
+
 }
