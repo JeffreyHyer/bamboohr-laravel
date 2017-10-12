@@ -29,7 +29,7 @@ For Laravel <= 5.4 you'll need to add the Service Provider and Facade to the
 
 'aliases' => [
     // ...
-    'Bugsnag' => JeffreyHyer\BambooHR\Facade::class,
+    'BambooHR' => JeffreyHyer\BambooHR\Facade::class,
 ],
 ```
 
