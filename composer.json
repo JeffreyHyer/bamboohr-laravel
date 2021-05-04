@@ -6,7 +6,7 @@
     "version": "1.0.6",
     "require": {
         "php": ">=7.0.0",
-        "illuminate/support": "5.*|^6.0",
+        "illuminate/support": "5.*|^6.0|^7.0|^8.0",
         "jeffreyhyer/bamboohr": "~1.0"
     },
     "license": "MIT",
