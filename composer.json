@@ -3,7 +3,7 @@
     "type": "library",
     "description": "Laravel 5.x Service Provider and Facade for the jeffreyhyer/bamboohr package",
     "keywords": ["laravel", "bamboohr", "api"],
-    "version": "1.0.6",
+    "version": "1.0.8",
     "require": {
         "php": ">=7.0.0",
         "illuminate/support": "5.*|^6.0|^7.0|^8.0",
